@@ -5,12 +5,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
 
-  plugins: [
-
+  plugins:[
     react(),
-
     tailwindcss()
-
   ],
+
+  base:"/taskflow/"
 
 })

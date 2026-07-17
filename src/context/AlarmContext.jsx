@@ -107,7 +107,7 @@ function AlarmProvider({ children }) {
 
 
 
-          const audio = new Audio("/alarm.mp3");
+         const audio = new Audio(`${import.meta.env.BASE_URL}alarm.mp3`);
 
 
           setCurrentAudio(audio);
