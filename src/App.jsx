@@ -17,13 +17,13 @@ function App() {
   return (
 
     <div className="
-  min-h-screen
-  bg-gradient-to-br
-  from-slate-950
-  via-slate-900
-  to-green-950
-  text-white
-">
+      min-h-screen
+      bg-gradient-to-br
+      from-slate-950
+      via-slate-900
+      to-green-950
+      text-white
+    ">
 
 
       <Navbar />
@@ -70,7 +70,11 @@ function App() {
 
 
 
-          <div className="lg:col-span-2 space-y-5">
+          <div className="
+            lg:col-span-2
+            space-y-5
+          ">
+
 
 
             <SearchBar />
@@ -82,6 +86,7 @@ function App() {
               onEdit={setEditingTask}
 
             />
+
 
 
           </div>
