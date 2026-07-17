@@ -245,13 +245,13 @@ hover:shadow-green-500/10\r
           font-bold\r
           transition\r
           `,children:[(0,k.jsx)(le,{}),`Eliminar`]})]})]})}function Oe({onEdit:e}){let{tasks:t,search:n,filter:r}=(0,_.useContext)(_e),i=t.filter(e=>{let t=e.title.toLowerCase().includes(n.toLowerCase()),i=r===`Todas`||e.status===r;return t&&i});return(0,k.jsxs)(`section`,{className:`max-w-7xl mxauto px-6 py-10`,children:[(0,k.jsx)(`h2`,{className:`text-3xl font-bold mb-6`,children:`Mis tareas`}),i.length===0?(0,k.jsx)(`p`,{className:`text-slate-400`,children:`No hay tareas para mostrar`}):(0,k.jsx)(`div`,{className:`grid md:grid-cols-2 lg:grid-cols-3 gap-6`,children:i.map(t=>(0,k.jsx)(De,{task:t,onEdit:e},t.id))})]})}function ke(){let[e,t]=(0,_.useState)(null);return(0,k.jsxs)(`div`,{className:`
-  min-h-screen
-  bg-gradient-to-br
-  from-slate-950
-  via-slate-900
-  to-green-950
-  text-white
-`,children:[(0,k.jsx)(Ce,{}),(0,k.jsxs)(`main`,{className:`
+      min-h-screen
+      bg-gradient-to-br
+      from-slate-950
+      via-slate-900
+      to-green-950
+      text-white
+    `,children:[(0,k.jsx)(Ce,{}),(0,k.jsxs)(`main`,{className:`
         max-w-7xl
         mx-auto
         px-6
@@ -261,4 +261,7 @@ hover:shadow-green-500/10\r
           lg:grid-cols-3
           gap-8
           items-start
-        `,children:[(0,k.jsx)(`div`,{className:`lg:col-span-1`,children:(0,k.jsx)(Te,{editingTask:e,setEditingTask:t})}),(0,k.jsxs)(`div`,{className:`lg:col-span-2 space-y-5`,children:[(0,k.jsx)(Ee,{}),(0,k.jsx)(Oe,{onEdit:t})]})]})]})]})}(0,v.createRoot)(document.getElementById(`root`)).render((0,k.jsx)(_.StrictMode,{children:(0,k.jsx)(ve,{children:(0,k.jsx)(be,{children:(0,k.jsx)(ke,{})})})}));
+        `,children:[(0,k.jsx)(`div`,{className:`lg:col-span-1`,children:(0,k.jsx)(Te,{editingTask:e,setEditingTask:t})}),(0,k.jsxs)(`div`,{className:`
+            lg:col-span-2
+            space-y-5
+          `,children:[(0,k.jsx)(Ee,{}),(0,k.jsx)(Oe,{onEdit:t})]})]})]})]})}(0,v.createRoot)(document.getElementById(`root`)).render((0,k.jsx)(_.StrictMode,{children:(0,k.jsx)(ve,{children:(0,k.jsx)(be,{children:(0,k.jsx)(ke,{})})})}));
