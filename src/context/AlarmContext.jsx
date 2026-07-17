@@ -107,8 +107,28 @@ function AlarmProvider({ children }) {
 
 
 
-         const audio = new Audio(`${import.meta.env.BASE_URL}alarm.mp3`);
+        const audio = new Audio();
 
+audio.src = `${import.meta.env.BASE_URL}alarm.mp3`;
+
+audio.volume = 1;
+
+audio.load();
+
+audio.play()
+.then(() => {
+
+  console.log("🔊 Alarma sonando");
+
+})
+.catch(error => {
+
+  console.log(
+    "❌ Error reproduciendo alarma:",
+    error
+  );
+
+});
 
           setCurrentAudio(audio);
 
